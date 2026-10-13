@@ -1,11 +1,11 @@
 # Update-CREAS
 
-Versão publicada: 1.0.32.
+Versão publicada: 1.0.33.
 
-Recusa de credencial/permissão/configuração SQL não pode ser contornada por login em cache. Mantém identidade central e sigilo somente online da versão anterior.
+Corrige a falha do dashboard causada por collations diferentes na consulta UNION. Mantém identidade central e sigilo somente online. Falhas de consulta não são exibidas como contagens de zero.
 
-17 testes passaram; 160 no conjunto dos cinco programas. Sem migração nova.
+18 testes passaram. Consulta corrigida validada no MySQL de produção, somente leitura. Sem migração nova.
 
-Use Sobre > Verificar / Atualizar agora e reinicie quando solicitado. O nome físico do JAR permanece estável. Manifesto e binário assinados; confira REVISAO_1.0.32.md para detalhes.
+Use Sobre > Verificar / Atualizar agora e reinicie quando solicitado. O nome físico do JAR permanece estável. Manifesto e binário assinados; confira CORRECOES_1.0.33.md para detalhes.
 
 Limitações: NÃO remove caches/anexos antigos, NÃO altera grants nem separa contas do banco e NÃO encerra a validação completa de todas as telas. A publicação não instala automaticamente nos computadores.
