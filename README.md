@@ -1,20 +1,11 @@
 # Update-CREAS
 
-Versão publicada: 1.0.31.
+Versão publicada: 1.0.32.
 
-Consulta identidade central atual nas medidas e alertas, preservando históricos e registros sem vínculo. Novas réplicas não copiam tabelas sigilosas do CREAS nem views desconhecidas. Consultas e gravações sigilosas offline são recusadas; auditoria sigilosa usa conexão online. Agenda, encaminhamentos, histórico e documentos ficam online por conterem vínculos sigilosos. 14 testes passaram. Não exige migração nova.
+Recusa de credencial/permissão/configuração SQL não pode ser contornada por login em cache. Mantém identidade central e sigilo somente online da versão anterior.
 
-Use Sobre > Verificar / Atualizar agora e reinicie quando solicitado. A publicação não instala automaticamente nos computadores.
+17 testes passaram; 160 no conjunto dos cinco programas. Sem migração nova.
 
-LIMITAÇÃO: esta versão NÃO apaga fisicamente dados existentes em arquivos offline antigos. O programa bloqueia consultas sigilosas offline, mas acesso direto ao arquivo antigo ainda precisa ser tratado. Grants do servidor e a revisão completa dos outros programas continuam pendentes. Não representa garantia de isolamento completo.
+Use Sobre > Verificar / Atualizar agora e reinicie quando solicitado. O nome físico do JAR permanece estável. Manifesto e binário assinados; confira REVISAO_1.0.32.md para detalhes.
 
-Publique o conteudo desta pasta no repositorio:
-
-https://github.com/conectcras-ai/Update-CREAS
-
-Estrutura esperada:
-
-- manifest.xml
-- app/conect-creas-1.0.0-completo.jar
-
-Para o botao Sobre > Atualizar sistema detectar nova versao, a versao do manifest precisa ser maior que a versao instalada.
+Limitações: NÃO remove caches/anexos antigos, NÃO altera grants nem separa contas do banco e NÃO encerra a validação completa de todas as telas. A publicação não instala automaticamente nos computadores.
